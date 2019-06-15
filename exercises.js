@@ -1,3 +1,6 @@
+console.log('Hello World!');
+
+
 /* 1) Ticket Generator
 Write a for-loop that will iterate through 20 numbers (starting at 1 and ending at 20) and console.log the following message:
 "Now serving 1."
@@ -8,7 +11,10 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 .
 "Now serving 20."
 */
-
+console.log("#1");
+for (var i = 1; i<21; i++){
+  console.log('Now serving ' + i);
+} 
 
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:
@@ -18,9 +24,12 @@ This week's chart buster is: 'I Feel It Coming.'
 This week's chart buster is: 'Let Me Love You.'
 This week's chart buster is: '24K Magic.'
 */
-
+console.log("#2");
 var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K Magic"];
-
+for (var i = 0; i < topFive.length; i++){
+  console.log("This week's chart buster is: ");
+  console.log(topFive[i]);
+}
 
 /* 3) Dead Presidents
 Declare a variable named `presidents` and assign it to an array containing the following Presidents: Washington, Adams, Jefferson, Madison and Monroe.
@@ -41,12 +50,32 @@ This function will iterate through the person parameter and console.log the foll
 
 "President person was a great leader."
 */
+console.log("#3");
+var president = ['Washington', 'Adams', 'Jefferson', 'Madison', 'Monroe'];
+console.log(president.length);
 
+for(var i = 0; i < president.length; i++){
+  console.log("The value at " + i + " is " + president[i]);
+}
+console.log(president[i]);
 
+function leaders(person){
+  for(var i = 0; i < president.length; i++){
+    console.log("President " + person[i] + " was a great leader");
+    console.log(president[i]);
+  }
+}
+leaders(president)
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
 
 Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"*/
+console.log("#4");
+var stringOfNumbers = "";
+for(var i = 10; i < 21; i++){
+  stringOfNumbers += i;
+}
+console.log(stringOfNumbers);
 
 
 /* 5) Even Stevens
@@ -55,8 +84,14 @@ Declare a variable named `evenNumArr` and assign its value to an empty array.
 Write a for-loop that will push even numbers to the `evenNumArr` array. We want to push 50 even even numbers starting from 0.
 Console.log your results.
 */
-
-
+console.log("#5");
+var evenNumArr = [];
+for(var i = 0; i <= 50; i++){
+  if(i%2 === 0){
+    evenNumArr.push(i);
+  }
+}
+console.log(evenNumArr);
 /* 6) Up the Odds
 Declare a variable named `oddSum` and assign it to the Number value 0.
 
@@ -136,7 +171,7 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each And Every Highway. But More, Much More Than This. I Did It My Way."  
 */
 
-var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
+//var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
 
 
 
@@ -147,7 +182,7 @@ Note, please use two for loops to complete this problem
   @param Datatype: Array
   */
 
-var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"],["Rome", "Colosseum"]];
+//var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"],["Rome", "Colosseum"]];
 
 
 
